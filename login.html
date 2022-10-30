@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+	<script src="https://unpkg.com/feather-icons"></script>
+	<title>Flight Res</title>
+	<link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<!-- logo -->
+			<a href="index.html" class="logo">
+				<img src="./assets/images/logo.png" alt="Flight Res" width="50">
+				<h4>FlightResor</h4>
+			</a>
+			<!-- search -->
+			<form id="search">
+				<input type="text" placeholder="Search for flights">
+				<button type="submit">
+					<i data-feather="search" width="20"></i>
+				</button>
+			</form>
+			<!-- login / signup -->
+
+			<div class="group">
+				<a href="login.html" class="btn">Login</a>
+				<a href="register.html" class="btn btn-primary">Register</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="register">
+		<div class="container grid-col-2">
+			<form id="register" class="form-card">
+				<h2>Welcome back,<br> Lets Login </h2>
+
+				<div class="input-group">
+					<label for="email">Your Email</label>
+					<input type="email" required placeholder="Enter your email" name="email" id="email">
+				</div>
+				<div class="input-group">
+					<label for="password">Your Password</label>
+					<input type="password" required placeholder="Enter your password" name="password" id="password">
+				</div>
+
+				<button class="btn btn-primary">Login</button>
+				<p>Don't have an account? <a href="register.html">Register</a></p>
+			</form>
+			<div class="img-col relative">
+				<h3 class="fade-in">Welcome to <span>FlightResor</span></h3>
+				<p class="fade-in">Sigup today & reserve the best flight option in the cheapest rate possible, from the
+					comfort of your own.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<p>&copy; Copyright 2022 All rights reserved. developed by <a href="https://mirtiza.netlify.app/">Muhammad Irtiza</a> & <a href="#">Hassan Dawar</a></p>
+	</footer>
+	<script type="module" src="./src/app.js"></script>
+</body>
+
+</html>
