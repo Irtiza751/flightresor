@@ -210,10 +210,12 @@ section .container {
     margin-bottom: 1rem;
 }
 
-.register .container {
+.register .grid-col-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 0.4rem;
+    margin: 0.5rem 0;
 }
 
 .img-col {
@@ -248,7 +250,7 @@ section .container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 0 5rem 0 0;
+    padding: 0 3rem 0 0;
 }
 
 .input-group {
@@ -257,7 +259,8 @@ section .container {
     gap: 0.4rem;
 }
 
-.register input {
+.register input,
+select  {
     padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #ccc;
@@ -269,6 +272,30 @@ section .container {
     font-weight: 500;
     font-size: 1.1rem;
     margin-top: 1rem;
+}
+
+.card {
+    color: var(--dark);
+    background: var(--light);
+    max-width: 45rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card h3 {
+    font-size: 2rem;
+}
+.card .input-group {
+    margin: 0.4rem 0;
+}
+
+.card h2 {
+    color: var(--dark);
+}
+
+.w-full {
+    width: 100%;
 }
 
 footer {
