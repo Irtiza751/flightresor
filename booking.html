@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
   <script src="https://unpkg.com/feather-icons"></script>
-  <title>Flight Res</title>
+  <title>FlightResor</title>
   <link rel="stylesheet" href="./src/main.css">
 </head>
 
@@ -37,15 +37,45 @@
 
   <section class="hero">
     <div class="container fade-in">
-      <form class="card">
-        
+      <form class="card register">
+        <h3>Search and <br> Reserve Flights</h3>
+        <div class="grid-col-2">
+          <div class="input-group">
+            <label for="from_airport">From City/Airport</label>
+            <input type="text" placeholder="From City/Airport" name="from" id="from_airport">
+          </div>
+          <div class="input-group">
+            <label for="to_airport">To City/Airport</label>
+            <input type="text" placeholder="To City/Airport" name="to" id="to_airport">
+          </div>
+        </div>
+        <div class="grid-col-2">
+          <div class="input-group">
+            <label for="from_date">From date</label>
+            <input type="date" name="from_date" id="from_date">
+          </div>
+          <div class="input-group">
+            <label for="to_date">To date</label>
+            <input type="date" name="to_date" id="to_date">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="flight_class">Flight Class</label>
+          <select name="flight_class" id="flight_class">
+            <option value="economy">Economy</option>
+            <option value="premium_economy">Premium Economy</option>
+            <option value="business">Business</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-cta w-full">Reserve</button>
       </form>
     </div>
   </section>
 
 
   <footer>
-    <p>&copy; Copyright 2022 All rights reserved. developed by <a href="https://mirtiza.netlify.app/">Muhammad Irtiza</a> & <a href="#">Hassan Dawar</a></p>
+    <p>&copy; Copyright 2022 All rights reserved. developed by <a href="https://mirtiza.netlify.app/">Muhammad
+        Irtiza</a> & <a href="#">Hassan Dawar</a></p>
   </footer>
   <script type="module" src="./src/app.js"></script>
 </body>
